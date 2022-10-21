@@ -6,7 +6,7 @@
 /*   By: mproveme <mproveme@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 13:29:13 by mproveme          #+#    #+#             */
-/*   Updated: 2022/10/20 14:12:38 by mproveme         ###   ########.fr       */
+/*   Updated: 2022/10/21 13:28:16 by mproveme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,12 @@
 
 class ClapTrap
 {
-private:
-	std::string name;
-	unsigned int hp;
-	unsigned int ep;
-	unsigned int dmg;
+protected:
+	std::string		name;
+	unsigned int	hp;
+	unsigned int	ep;
+	unsigned int 	dmg;
+	bool			guard;
 public:
 	ClapTrap(std::string name);
 	ClapTrap(ClapTrap const & src);
@@ -31,11 +32,11 @@ public:
 
 	void attack(const std::string& target);
 	void takeDamage(unsigned int amount);
-	void beRepaired(unsigned int amount);
+	virtual void beRepaired(unsigned int amount);
 
 	int spendEp();
 	int isAlive();
-	void takeEP(unsigned int amount);
+	virtual void takeEP(unsigned int amount);
 };
 
 std::ostream & operator<<(std::ostream &stream, ClapTrap const &src);

@@ -6,31 +6,31 @@
 /*   By: mproveme <mproveme@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 15:27:08 by mproveme          #+#    #+#             */
-/*   Updated: 2022/10/20 15:27:58 by mproveme         ###   ########.fr       */
+/*   Updated: 2022/10/21 13:16:11 by mproveme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef SCAVTRAP_HPP
 # define SCAVTRAP_HPP
 
-#include <iostream>
+#include "ClapTrap.hpp"
 
-class ScavTrap
+class ScavTrap : public ClapTrap
 {
 private:
 	/* data */
 public:
-	ScavTrap(/* args */);
+	ScavTrap(std::string name);
+	ScavTrap(ScavTrap const & src);
 	~ScavTrap();
+
+	ScavTrap & operator =(ScavTrap const & src);
+	void guardGate();
+	void beRepaired(unsigned int amount); // override;
+	void takeEP(unsigned int amount); // override;
 };
 
-ScavTrap::ScavTrap(/* args */)
-{
-}
-
-ScavTrap::~ScavTrap()
-{
-}
+std::ostream & operator <<(std::ostream & stream, ScavTrap const & src);
 
 
 #endif

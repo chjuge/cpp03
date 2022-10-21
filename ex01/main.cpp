@@ -6,15 +6,15 @@
 /*   By: mproveme <mproveme@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 18:30:06 by mproveme          #+#    #+#             */
-/*   Updated: 2022/10/20 14:27:46 by mproveme         ###   ########.fr       */
+/*   Updated: 2022/10/21 13:30:46 by mproveme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ClapTrap.hpp"
+#include "ScavTrap.hpp"
 
 int	main(void)
 {
-	ClapTrap joel("Joel");
+	ScavTrap joel("Joel");
 	std::string villager = "casual villager";
 
 	joel.attack(villager);
@@ -24,9 +24,11 @@ int	main(void)
 		joel.attack(villager);
 	joel.takeEP(15);
 	joel.beRepaired(15);
+	joel.guardGate();
+	joel.guardGate();
 	std::cout << villager + " retialates!" << std::endl;
 	joel.takeDamage(100);
 	joel.beRepaired(1);
-
+	joel.guardGate();
 	return (0);
 }
