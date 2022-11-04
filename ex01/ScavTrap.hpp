@@ -6,7 +6,7 @@
 /*   By: mproveme <mproveme@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 15:27:08 by mproveme          #+#    #+#             */
-/*   Updated: 2022/11/04 14:55:50 by mproveme         ###   ########.fr       */
+/*   Updated: 2022/11/04 14:58:50 by mproveme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,5 @@ public:
 	void beRepaired(unsigned int amount); // override;
 	void takeEP(unsigned int amount); // override;
 };
-
-std::ostream & operator <<(std::ostream & stream, ScavTrap const & src);
-
 
 #endif

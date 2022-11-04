@@ -6,7 +6,7 @@
 /*   By: mproveme <mproveme@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 13:29:13 by mproveme          #+#    #+#             */
-/*   Updated: 2022/10/21 14:00:00 by mproveme         ###   ########.fr       */
+/*   Updated: 2022/11/04 15:00:32 by mproveme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,5 @@ public:
 	int isAlive();
 	virtual void takeEP(unsigned int amount);
 };
-
-std::ostream & operator<<(std::ostream &stream, ClapTrap const &src);
 
 #endif

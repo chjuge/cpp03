@@ -6,7 +6,7 @@
 /*   By: mproveme <mproveme@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 13:57:29 by mproveme          #+#    #+#             */
-/*   Updated: 2022/10/21 14:23:15 by mproveme         ###   ########.fr       */
+/*   Updated: 2022/11/04 15:03:29 by mproveme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,5 @@ public:
 
 	void highFivesGuys(void);
 };
-
-std::ostream & operator<<(std::ostream &stream, FragTrap const &src);
 
 #endif
