@@ -6,7 +6,7 @@
 /*   By: mproveme <mproveme@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 13:29:13 by mproveme          #+#    #+#             */
-/*   Updated: 2022/10/21 13:28:16 by mproveme         ###   ########.fr       */
+/*   Updated: 2022/11/04 14:54:36 by mproveme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ protected:
 	unsigned int 	dmg;
 	bool			guard;
 public:
+	ClapTrap();
 	ClapTrap(std::string name);
 	ClapTrap(ClapTrap const & src);
 	~ClapTrap();
@@ -38,7 +39,5 @@ public:
 	int isAlive();
 	virtual void takeEP(unsigned int amount);
 };
-
-std::ostream & operator<<(std::ostream &stream, ClapTrap const &src);
 
 #endif

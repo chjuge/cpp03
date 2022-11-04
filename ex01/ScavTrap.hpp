@@ -6,7 +6,7 @@
 /*   By: mproveme <mproveme@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 15:27:08 by mproveme          #+#    #+#             */
-/*   Updated: 2022/10/21 13:16:11 by mproveme         ###   ########.fr       */
+/*   Updated: 2022/11/04 14:55:50 by mproveme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ class ScavTrap : public ClapTrap
 private:
 	/* data */
 public:
+	ScavTrap();
 	ScavTrap(std::string name);
 	ScavTrap(ScavTrap const & src);
 	~ScavTrap();

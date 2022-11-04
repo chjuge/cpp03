@@ -6,11 +6,16 @@
 /*   By: mproveme <mproveme@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 15:28:03 by mproveme          #+#    #+#             */
-/*   Updated: 2022/10/21 13:30:29 by mproveme         ###   ########.fr       */
+/*   Updated: 2022/11/04 14:56:36 by mproveme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScavTrap.hpp"
+
+ScavTrap::ScavTrap() : ClapTrap()
+{
+	std::cout << "ScavTrap default constructor called" << std::endl;
+}
 
 ScavTrap::ScavTrap(std::string name) : ClapTrap::ClapTrap(name)
 {
