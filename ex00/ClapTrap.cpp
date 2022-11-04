@@ -6,16 +6,23 @@
 /*   By: mproveme <mproveme@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 13:34:29 by mproveme          #+#    #+#             */
-/*   Updated: 2022/10/20 14:31:07 by mproveme         ###   ########.fr       */
+/*   Updated: 2022/11/04 14:50:55 by mproveme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 
+ClapTrap::ClapTrap()
+: name("Unknown"), hp(0), ep(0), dmg(0)
+{
+	std::cout << "Default constructor called" << std::endl;
+}
+
+
 ClapTrap::ClapTrap(std::string name) 
 : name(name), hp(10), ep(10), dmg(0)
 {
-	std::cout << "Default constructor called" << std::endl;
+	std::cout << "Constructor called" << std::endl;
 }
 
 ClapTrap::ClapTrap(ClapTrap const & src)
